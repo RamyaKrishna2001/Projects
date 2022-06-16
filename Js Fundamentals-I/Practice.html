@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: #092555;
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>DESTRUCTURING</h1>
+    <p>Click the button to make a BUTTON element with text.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+      function myFunction() {
+        var btn = document.createElement('BUTTON');
+        var t = document.createTextNode('CLICK ME');
+
+        btn.setAttribute('style', 'color:red;font-size:23px');
+
+        btn.appendChild(t);
+        document.body.appendChild(btn);
+
+        btn.setAttribute('onclick', alert('clicked'));
+      }
+    </script>
+    <!-- <script src="Practice.js"></script> -->
+  </body>
+</html>
